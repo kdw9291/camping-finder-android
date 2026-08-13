@@ -1,0 +1,335 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "e4c1a3260c15868a434c0d9091b87982",
+    "entities": [
+      {
+        "tableName": "campsite_summary",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`contentId` TEXT NOT NULL, `id` INTEGER NOT NULL, `name` TEXT NOT NULL, `doNm` TEXT, `sigunguNm` TEXT, `addr1` TEXT, `latitude` REAL, `longitude` REAL, `firstImageUrl` TEXT, `petPolicy` TEXT, `manageStatus` TEXT, `sbrsKnown` INTEGER NOT NULL, `facilities` TEXT NOT NULL, `cachedAt` INTEGER NOT NULL, PRIMARY KEY(`contentId`))",
+        "fields": [
+          {
+            "fieldPath": "contentId",
+            "columnName": "contentId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "doNm",
+            "columnName": "doNm",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sigunguNm",
+            "columnName": "sigunguNm",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "addr1",
+            "columnName": "addr1",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "latitude",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "longitude",
+            "columnName": "longitude",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "firstImageUrl",
+            "columnName": "firstImageUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "petPolicy",
+            "columnName": "petPolicy",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "manageStatus",
+            "columnName": "manageStatus",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sbrsKnown",
+            "columnName": "sbrsKnown",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "facilities",
+            "columnName": "facilities",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cachedAt",
+            "columnName": "cachedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "contentId"
+          ]
+        }
+      },
+      {
+        "tableName": "search_result",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`queryKey` TEXT NOT NULL, `page` INTEGER NOT NULL, `position` INTEGER NOT NULL, `contentId` TEXT NOT NULL, `totalElements` INTEGER NOT NULL, `fetchedAt` INTEGER NOT NULL, PRIMARY KEY(`queryKey`, `page`, `position`))",
+        "fields": [
+          {
+            "fieldPath": "queryKey",
+            "columnName": "queryKey",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "page",
+            "columnName": "page",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "position",
+            "columnName": "position",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contentId",
+            "columnName": "contentId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalElements",
+            "columnName": "totalElements",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fetchedAt",
+            "columnName": "fetchedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "queryKey",
+            "page",
+            "position"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_search_result_contentId",
+            "unique": false,
+            "columnNames": [
+              "contentId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_search_result_contentId` ON `${TABLE_NAME}` (`contentId`)"
+          }
+        ]
+      },
+      {
+        "tableName": "campsite_detail",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`contentId` TEXT NOT NULL, `name` TEXT NOT NULL, `lineIntro` TEXT, `intro` TEXT, `feature` TEXT, `doNm` TEXT, `sigunguNm` TEXT, `addr1` TEXT, `addr2` TEXT, `latitude` REAL, `longitude` REAL, `tel` TEXT, `homepage` TEXT, `resveUrl` TEXT, `firstImageUrl` TEXT, `petPolicy` TEXT, `brazierType` TEXT, `manageStatus` TEXT, `toiletCount` INTEGER, `showerCount` INTEGER, `washstandCount` INTEGER, `facilities` TEXT NOT NULL, `unknownCategories` TEXT NOT NULL, `cachedAt` INTEGER NOT NULL, `lastAccessedAt` INTEGER NOT NULL, PRIMARY KEY(`contentId`))",
+        "fields": [
+          {
+            "fieldPath": "contentId",
+            "columnName": "contentId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lineIntro",
+            "columnName": "lineIntro",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "intro",
+            "columnName": "intro",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "feature",
+            "columnName": "feature",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "doNm",
+            "columnName": "doNm",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sigunguNm",
+            "columnName": "sigunguNm",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "addr1",
+            "columnName": "addr1",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "addr2",
+            "columnName": "addr2",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "latitude",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "longitude",
+            "columnName": "longitude",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "tel",
+            "columnName": "tel",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "homepage",
+            "columnName": "homepage",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "resveUrl",
+            "columnName": "resveUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "firstImageUrl",
+            "columnName": "firstImageUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "petPolicy",
+            "columnName": "petPolicy",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "brazierType",
+            "columnName": "brazierType",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "manageStatus",
+            "columnName": "manageStatus",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "toiletCount",
+            "columnName": "toiletCount",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "showerCount",
+            "columnName": "showerCount",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "washstandCount",
+            "columnName": "washstandCount",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "facilities",
+            "columnName": "facilities",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unknownCategories",
+            "columnName": "unknownCategories",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cachedAt",
+            "columnName": "cachedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastAccessedAt",
+            "columnName": "lastAccessedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "contentId"
+          ]
+        }
+      },
+      {
+        "tableName": "filter_options",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `payload` TEXT NOT NULL, `fetchedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "payload",
+            "columnName": "payload",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fetchedAt",
+            "columnName": "fetchedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e4c1a3260c15868a434c0d9091b87982')"
+    ]
+  }
+}

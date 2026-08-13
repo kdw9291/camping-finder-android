@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      로컬 개발 서버(http://10.0.2.2:8080)는 평문 HTTP 다.
+      디버그 빌드에만 허용하고 release 는 HTTPS 전용으로 남긴다.
+      전체 빌드에 usesCleartextTraffic 을 켜면 출시 앱까지 평문을 허용하게 된다.
+    -->
+    <application android:usesCleartextTraffic="true" />
+
+</manifest>

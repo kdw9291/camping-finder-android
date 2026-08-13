@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      화면은 전부 Compose 로 그린다. 이 XML 테마는 Compose 가 올라오기 전
+      윈도우 배경에만 관여한다. 그래서 material 라이브러리 의존성 없이 플랫폼 테마를 쓴다.
+    -->
+    <style name="Theme.CampingFinder" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      런처와 스토어에 표시되는 이름. 스토어 등록정보와 반드시 같게 유지한다.
+
+      ⚠️ applicationId(org.duckdns.woodysside.campingfinder)와는 다른 것이다.
+         표시 이름은 업데이트로 언제든 바꿀 수 있지만 applicationId 는
+         Play 에 한 번 올리면 영원히 못 바꾼다. 여기를 고칠 때 그쪽을 건드리지 마라.
+    -->
+    <string name="app_name">캠핑각</string>
+    <string name="campsite_list_title">캠핑장</string>
+    <string name="detail_title">캠핑장 상세</string>
+
+    <string name="search_hint">캠핑장 이름 또는 주소</string>
+    <string name="result_count">%1$d곳</string>
+    <string name="empty_result">조건에 맞는 캠핑장이 없습니다.</string>
+    <string name="retry">다시 시도</string>
+    <string name="no_photo">사진 없음</string>
+    <string name="map_title">지도</string>
+    <string name="open_map">지도</string>
+    <string name="search_this_area">이 지역에서 검색</string>
+    <string name="map_truncated">이 지역 %2$d곳 중 %1$d곳만 표시했습니다. 지도를 확대해 보세요.</string>
+    <string name="map_auth_failed">지도 인증에 실패했습니다.\n%1$s</string>
+
+    <string name="filter">필터</string>
+    <string name="filter_with_count">필터 %1$d</string>
+    <string name="filter_title">조건으로 찾기</string>
+    <string name="filter_reset">초기화</string>
+    <string name="filter_apply">적용</string>
+    <string name="filter_pet">반려동물</string>
+    <string name="filter_pet_allowed">동반 가능 (소형견 포함)</string>
+    <string name="filter_induty">업종</string>
+    <string name="filter_sbrs">부대시설</string>
+    <string name="filter_sbrs_desc">선택한 시설을 모두 갖춘 곳만 나옵니다.</string>
+
+    <!--
+      ★ 이 프로젝트의 핵심이 사용자 손에 들어오는 지점.
+      부대시설의 28.7%가 원본에 정보가 없다. 끄면 "전기 있는 곳" 검색에서 849곳이 사라지는데,
+      그 849곳은 전기가 없는 게 아니라 정보가 없는 곳이다.
+    -->
+    <string name="filter_include_unknown">시설 정보가 없는 곳도 포함</string>
+    <string name="filter_include_unknown_desc">끄면 정보가 확인된 곳만 나옵니다. 시설이 없는 곳을 빼는 것이 아닙니다.</string>
+    <!--
+      ★ 오프라인 캐시(M5). 저장해 둔 정보임을 반드시 밝힌다.
+
+      "오프라인" 이라는 상태만 알리고 끝내면 안 된다. 사용자가 알아야 하는 것은
+      연결 상태가 아니라 눈앞의 정보가 언제 것인가다. 어제 받은 운영시간과
+      지난달에 받은 운영시간은 신뢰도가 전혀 다르다.
+
+      빈 값을 "없음" 으로 바꿔 말하지 않는다는 이 앱의 원칙이 시간에도 그대로 적용된다.
+    -->
+    <string name="cache_notice_today">저장해 둔 정보입니다. 오늘 받은 것입니다.</string>
+    <string name="cache_notice_yesterday">저장해 둔 정보입니다. 어제 받은 것입니다.</string>
+    <string name="cache_notice_days_ago">저장해 둔 정보입니다. %1$d일 전에 받은 것입니다.</string>
+
+    <string name="load_more_failed">목록을 더 불러오지 못했습니다</string>
+    <string name="distance_km">%1$.1fkm</string>
+
+    <!--
+      ★ "정보 없음"을 명시하는 문구들.
+      시설 정보가 없는 곳이 전체의 28.7%다. 빈칸으로 두면 사용자가 "시설이 없는 곳"으로 읽는다.
+      모른다는 사실 자체를 보여주는 것이 이 앱의 존재 이유다.
+    -->
+    <string name="facility_unknown">시설 정보 없음</string>
+    <string name="unknown_value">정보 없음</string>
+    <string name="unknown_section_title">정보가 없는 항목</string>
+    <string name="unknown_section_desc">아래 항목은 원본 데이터에 정보가 없습니다. 시설이 없다는 뜻이 아닙니다.</string>
+
+    <string name="pet_policy">반려동물</string>
+    <string name="pet_allowed">동반 가능</string>
+    <string name="pet_small_only">소형견만 가능</string>
+    <string name="pet_not_allowed">동반 불가</string>
+
+    <string name="brazier">화로대</string>
+    <string name="brazier_individual">개별 사용</string>
+    <string name="brazier_communal">공동취사장</string>
+    <string name="brazier_not_allowed">사용 불가</string>
+
+    <string name="counts">시설 수</string>
+    <string name="toilet_n">화장실 %1$d</string>
+    <string name="shower_n">샤워실 %1$d</string>
+    <string name="washstand_n">개수대 %1$d</string>
+
+    <string name="cat_sbrs">부대시설</string>
+    <string name="cat_posbl">주변 이용가능시설</string>
+    <string name="cat_thema">테마환경</string>
+    <string name="cat_lct">입지</string>
+    <string name="cat_induty">업종</string>
+    <string name="cat_oper_pd">운영기간</string>
+    <string name="cat_resve">예약방식</string>
+</resources>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>캠핑각 — 개인정보처리방침</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#5b6660; --line:#e2e6e3; --green:#1f4d33; --cream:#f7f3e8; }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:0;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+                "Noto Sans KR", "Malgun Gothic", sans-serif;
+    color:var(--ink); line-height:1.75; background:#fff;
+    word-break:keep-all;
+  }
+  header { background:var(--green); color:var(--cream); padding:44px 24px 36px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header h1 { margin:0 0 6px; font-size:1.55rem; letter-spacing:-.02em; }
+  header p { margin:0; opacity:.82; font-size:.92rem; }
+  main { padding:8px 24px 72px; }
+  h2 { font-size:1.1rem; margin:40px 0 12px; padding-top:20px; border-top:1px solid var(--line); letter-spacing:-.01em; }
+  h2:first-of-type { border-top:0; }
+  p, li { font-size:.97rem; }
+  ul { padding-left:1.2em; }
+  li { margin:6px 0; }
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:.92rem; }
+  th, td { border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top; }
+  th { background:#f6f8f7; font-weight:600; white-space:nowrap; }
+  .lead {
+    background:#f4f8f5; border-left:3px solid var(--green);
+    padding:16px 18px; margin:24px 0; border-radius:0 6px 6px 0;
+  }
+  .lead strong { color:var(--green); }
+  code { background:#f1f3f2; padding:1px 5px; border-radius:3px; font-size:.88em; }
+  footer { border-top:1px solid var(--line); padding:24px; color:var(--muted); font-size:.86rem; }
+  a { color:var(--green); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>캠핑각 — 개인정보처리방침</h1>
+    <p>시행일 2026년 8월 11일 · 최종 수정 2026년 8월 11일</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="lead">
+    <strong>이 앱은 개인정보를 수집하지 않습니다.</strong>
+    회원가입이 없고, 로그인이 없으며, 이름·이메일·전화번호·위치를 요구하지 않습니다.
+    앱이 저장하는 것은 내 기기 안의 검색 조건뿐이고, 그것도 앱을 지우면 함께 사라집니다.
+  </div>
+
+  <h2>1. 수집하는 개인정보</h2>
+  <p>없습니다. 이 앱은 다음을 <strong>수집하지도, 저장하지도, 전송하지도</strong> 않습니다.</p>
+  <ul>
+    <li>이름, 이메일, 전화번호 등 신원을 알 수 있는 정보</li>
+    <li>기기 위치 정보 <span style="color:var(--muted)">(위치 권한 자체를 요구하지 않습니다)</span></li>
+    <li>연락처, 사진, 파일, 통화 기록</li>
+    <li>광고 식별자(AAID) — 이 앱에는 광고가 없습니다</li>
+  </ul>
+
+  <h2>2. 기기에만 저장되는 것</h2>
+  <table>
+    <tr><th>항목</th><th>목적</th><th>보관</th></tr>
+    <tr>
+      <td>마지막 검색 조건<br>(지역·부대시설·업종 등)</td>
+      <td>앱을 다시 열었을 때 조건을 다시 고르지 않아도 되도록</td>
+      <td>기기 내부에만. 앱 삭제 시 함께 삭제</td>
+    </tr>
+    <tr>
+      <td>캠핑장 사진 임시 파일</td>
+      <td>같은 사진을 반복해서 내려받지 않기 위한 캐시</td>
+      <td>기기 내부에만. 앱 삭제 또는 캐시 삭제 시 제거</td>
+    </tr>
+  </table>
+  <p>이 정보는 서버로 전송되지 않으며, 개발자를 포함한 누구도 열람할 수 없습니다.</p>
+
+  <h2>3. 앱이 통신하는 곳</h2>
+  <p>앱은 캠핑장 정보를 보여주기 위해 아래 세 곳과 통신합니다. 통신 시 서버에는 통신 자체에 필요한
+     최소한의 기술 정보(접속 IP, 요청 시각, 앱 버전 등)가 일시적으로 남을 수 있습니다.
+     이는 서비스 운영과 오류 대응 목적으로만 쓰이고, 다른 정보와 결합해 개인을 식별하는 데 사용하지 않습니다.</p>
+  <table>
+    <tr><th>대상</th><th>주고받는 것</th><th>비고</th></tr>
+    <tr>
+      <td>캠핑각 API<br><code>woodys-side.duckdns.org</code></td>
+      <td>검색 조건을 보내고 캠핑장 목록을 받습니다</td>
+      <td>개발자가 직접 운영. 접속 기록은 최대 30일 보관 후 삭제</td>
+    </tr>
+    <tr>
+      <td>네이버 클라우드 플랫폼 지도</td>
+      <td>지도 화면에 필요한 타일 이미지를 받습니다</td>
+      <td><a href="https://www.ncloud.com/policy/privacy" target="_blank" rel="noopener">NCP 개인정보처리방침</a></td>
+    </tr>
+    <tr>
+      <td>고캠핑 (한국관광공사)</td>
+      <td>캠핑장 사진을 받습니다</td>
+      <td>공공데이터. 사진 URL 이 해당 서버를 가리킵니다</td>
+    </tr>
+  </table>
+
+  <h2>4. 앱이 요구하는 권한</h2>
+  <table>
+    <tr><th>권한</th><th>용도</th></tr>
+    <tr><td>인터넷 접속</td><td>캠핑장 정보와 지도를 내려받기 위해 반드시 필요합니다</td></tr>
+  </table>
+  <p>그 외의 권한은 요구하지 않습니다. <strong>위치 권한도 사용하지 않습니다.</strong>
+     지도의 "이 지역에서 검색"은 기기 위치가 아니라 <em>사용자가 화면에서 보고 있는 지도의 중심 좌표</em>로 동작합니다.</p>
+  <p style="color:var(--muted); font-size:.9rem;">
+     향후 "내 위치에서 찾기" 기능을 추가하면서 위치 권한이 필요해질 경우,
+     이 방침을 먼저 갱신하고 앱 안에서 별도로 동의를 받겠습니다. 권한을 거부해도 나머지 기능은 그대로 쓸 수 있게 만들 것입니다.</p>
+
+  <h2>5. 제3자 제공 및 광고</h2>
+  <p>수집하는 개인정보가 없으므로 제3자에게 제공하거나 판매하는 개인정보도 없습니다.
+     이 앱에는 광고와 분석 도구(Google Analytics, Firebase Analytics, 광고 SDK 등)가 들어 있지 않습니다.</p>
+
+  <h2>6. 아동의 개인정보</h2>
+  <p>이 앱은 특정 연령대를 대상으로 하지 않으며, 만 14세 미만 아동을 포함한 어떤 이용자로부터도
+     개인정보를 수집하지 않습니다.</p>
+
+  <h2>7. 이용자의 권리</h2>
+  <p>보관 중인 개인정보가 없으므로 열람·정정·삭제를 요청할 대상이 없습니다.
+     기기에 저장된 검색 조건과 사진 캐시는 <em>설정 → 애플리케이션 → 캠핑각 → 저장공간</em>에서
+     직접 지우거나, 앱을 삭제하면 함께 사라집니다.</p>
+
+  <h2>8. 데이터 출처</h2>
+  <p>캠핑장 정보는 한국관광공사가 공공데이터포털을 통해 제공하는
+     <strong>고캠핑 API</strong>를 원본으로 합니다. 앱은 이 데이터를 매일 1회 동기화해 보여줍니다.
+     원본에 없는 정보는 임의로 채우지 않고 <em>"정보 없음"</em>으로 표시합니다.</p>
+
+  <h2>9. 방침 변경</h2>
+  <p>내용이 바뀌면 이 페이지를 갱신하고 상단의 최종 수정일을 고칩니다.
+     이용자에게 중대한 영향을 주는 변경(예: 수집 항목 추가)은 시행 최소 7일 전에 이 페이지에 공지합니다.</p>
+
+  <h2>10. 문의</h2>
+  <p>이 방침이나 앱에 대한 문의는 아래로 연락 주시기 바랍니다.</p>
+  <p><a href="mailto:kdw9291@kakao.com">kdw9291@kakao.com</a></p>
+
+</main>
+
+<footer class="wrap">
+  캠핑각 · 개인 개발 프로젝트<br>
+  캠핑장 정보 출처: 한국관광공사 고캠핑 (공공데이터포털)
+</footer>
+
+</body>
+</html>

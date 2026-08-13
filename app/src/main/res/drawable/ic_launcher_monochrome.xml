@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 13+ 테마 아이콘용 단색 레이어.
+
+  시스템이 이 벡터의 알파 채널만 읽어 사용자 배경화면에서 뽑은 색으로 다시 칠한다.
+  그래서 색은 무엇으로 적든 무시된다 — 모양(알파)만 의미가 있다.
+  전경과 같은 도형이되, 단색으로 뭉개졌을 때 형태가 남도록 지면을 조금 굵게 했다.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M54,28 L86,74 L22,74 Z M54,46 L67,74 L41,74 Z" />
+
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M27,79 L81,79" />
+
+</vector>

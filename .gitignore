@@ -1,0 +1,24 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+
+# ⚠️ /build 는 루트만 걸린다. 모듈 빌드 산출물(app/build)은 안 걸려서
+#    13MB APK 와 생성 소스가 통째로 커밋될 뻔했다.
+build/
+
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+### 서명 키 — 절대 커밋하지 않는다 ###
+# 업로드 키를 잃으면 앱 갱신이 불가능해지고, 유출되면 남이 내 앱 이름으로 올릴 수 있다.
+*.jks
+*.keystore
+keystore.properties
+
+### 로컬 비밀값 ###
+.env
+secrets.properties

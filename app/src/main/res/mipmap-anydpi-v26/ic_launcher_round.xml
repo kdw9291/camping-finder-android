@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  적응형 아이콘은 런처가 알아서 원형으로 마스크한다. 그래서 내용은 ic_launcher 와 같다.
+  그래도 파일을 두는 이유는 android:roundIcon 을 명시한 매니페스트와 짝을 맞추기 위해서다 —
+  일부 제조사 런처가 roundIcon 이 없으면 레거시 경로로 떨어진다.
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_background" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+    <monochrome android:drawable="@drawable/ic_launcher_monochrome" />
+</adaptive-icon>

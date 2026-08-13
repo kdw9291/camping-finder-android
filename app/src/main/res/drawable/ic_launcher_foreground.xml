@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  런처 아이콘 전경.
+
+  적응형 아이콘 규격: 108x108dp 캔버스에 안전 영역은 가운데 66dp 원.
+  바깥 18dp 는 런처가 마스크·시차 애니메이션에 쓰므로 잘려 나갈 수 있다.
+  그래서 텐트는 22~86 (가로) · 28~81 (세로) 안에만 그린다.
+
+  minSdk 26 이라 PNG 폴백(mipmap-hdpi 등)이 필요 없다. 적응형 아이콘만으로 전 기기를 덮는다.
+  벡터라 어떤 밀도에서도 흐려지지 않고, APK 에 들어가는 크기는 1KB 미만이다.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+      텐트. 바깥 삼각형과 입구 삼각형을 한 path 에 넣고 evenOdd 로 입구를 뚫는다.
+      두 개의 path 로 나눠 입구를 배경색으로 덮으면, 사용자가 배경 레이어를 테마 색으로
+      바꾸는 기기(Android 13+ 테마 아이콘)에서 입구만 옛 색으로 남는다.
+    -->
+    <path
+        android:fillColor="#F7F3E8"
+        android:fillType="evenOdd"
+        android:pathData="M54,28 L86,74 L22,74 Z M54,46 L67,74 L41,74 Z" />
+
+    <!-- 지면 -->
+    <path
+        android:strokeColor="#F7F3E8"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M27,79 L81,79" />
+
+</vector>
